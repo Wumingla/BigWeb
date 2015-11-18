@@ -4,7 +4,7 @@ Web大前端工程师学习路径
 WEB大前端工程师，是集传统WEB工程师和后端工程师角色于一身，并能协调设计师、产品经理等诸多角色的职位。
 必须掌握的专业技能包括HTML5、CSS3、JavaScript互联网交互设计能力，熟悉后端服务器运行环境和简单数据通信协议掌握响应式布局框架Bootstrap，对AngularJS、ReactJS等最新的JS框架的持续关注和应用，以及Grunt、Gulp、Bower、Yeoman等构建和部署工具并掌握Nodejs、PHP、MySQL基础知识等后端技术才能对整体WEB性能优化有较深的认识，而且可以利用JavaScript配合Cordova以及ReactNative开发Android和iOS跨端应用高级人才。
 
-Web 前端开发⼯程师, 主要职责是利用 (X) HTML / CSS / JavaScript / Flash 等各种 Web 技术进⾏行客户端产品的开发。完成客户端程序(也就是浏览器端) 的开发, 开发 JavaScript 以及 Flash 模块, 同时结合后台开发技术模拟整体效果, 进⾏行丰富互联网的 Web 开发, 致⼒于通过技术改善⽤用户体验。
+Web 前端开发工程师, 主要职责是利用 (X) HTML / CSS / JavaScript / Flash 等各种 Web 技术进行客户端产品的开发。完成客户端程序(也就是浏览器端) 的开发, 开发 JavaScript 以及 Flash 模块, 同时结合后台开发技术模拟整体效果, 进行丰富互联网的 Web 开发, 致力于通过技术改善用户体验。
 
 如果要进入前端这个行业，首先要有对前端非常敏锐的嗅觉，你认为你做出了它非常有成就感，而且感到幸喜，而且非常给用户产生良好的交互效果及用户体验。
 
