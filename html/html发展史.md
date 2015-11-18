@@ -10,6 +10,6 @@ OPERA、APPLE、MOZILLA开始反抗，04年OPERA提出一些建议来适应新�
 由于DOS时代文件扩展名限制为三个.htm的页面现在也一直被支持着。
 
 # DTD
-过渡的（Transitional）：要求非常宽松，继续使用HTML4.01的标识。
-严格的（Strict）：不能使用任何表现层的标签和属性，如<br>。
-框架的（Franmeset）：页面中包含有框架，需要采用这种DTD。
+<p>过渡的（Transitional）：要求非常宽松，继续使用HTML4.01的标识。</p>
+<p>严格的（Strict）：不能使用任何表现层的标签和属性，如br。</p>
+<p>框架的（Franmeset）：页面中包含有框架，需要采用这种DTD。</p>
