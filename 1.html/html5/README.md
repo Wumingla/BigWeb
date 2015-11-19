@@ -99,10 +99,26 @@ placeholder是指当文本框处于未输入状态时显示的输入提示。当
 #### list
 在HTML5中，为单行文本框增加了一个list属性，该属性的值为某个datalist元素的id。datalist元素也是HTML5中新增的元素，该元素类似于选择框，但是当用户想要设定的值不在选择列表之内，允许自行输入。datalist元素本身并不显示，而是当文本框获取焦点时以提示输入的显示方式。
 
+#### AutoComplete
+帮助输入所用的自动完成功能，是一个既节省输入时间又十分方便的功能。在HTML5之前，因为谁都可以看见输入的值，所以在安全方面存在缺陷，只要使用AtuoComplete属性，安全性方面也可以得到很好的控制。
 
+#### pattern
+在HTML5中，对input元素使用pattern属性，并且将属性值设为某个格式的正则表达式，在提交时会针对这些进行检查，检查内容是否符合给定格式。当输入的内容不符合给定格式时，则不允许提交，同时在浏览器中显示信息提示文字，提示输入的内容必须符合给定格式。
 
+#### SelectionDirection
+这个对input元素与textarea元素，HTML5增加了SelectionDirection属性。当用户在这两个元素中用鼠标选取部分文字时，可以使用该属性来获取选取方向。当用户正向选取文字时，改属性值为"forward"，当用户反向选取文字时，改属性值为"backward"。当用户没有选取任何文字，该属性值为"forward"。
 
-####
+#### indeterminate
+对于复选框checkbox元素来说，过去只是选取与非选取这两种状态。在HTML5中，可以在JavaScript脚本代码中对该元素使用indeterminate属性，以说明复选框处于“尚未明确是否选取”状态。
+```
+<input type="checkbox" indeterminate id="cb">属性测试
+<script>
+  var cb = document.getElementById("cb");
+  cb.indeterminate = true;
+</script>
+```
+#### image提交按钮的height属性与width属性
+针对类型为image的input元素，HTML5新增了两个属性，height、width分别用来指定图片按钮的高度和宽度。
 
 ## 全局属性
 * contentEditable 属性 
