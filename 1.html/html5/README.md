@@ -121,9 +121,9 @@ placeholder是指当文本框处于未输入状态时显示的输入提示。当
 针对类型为image的input元素，HTML5新增了两个属性，height、width分别用来指定图片按钮的高度和宽度。
 
 ## 全局属性
-* contentEditable 属性 
-* designMode 属性  
-* hidden 属性
-* spellcheck 属性
-* tabindex 属性
+* contentEditable 属性 ~内容是否可被编辑
+* designMode 属性      ~全局内容是否可被编辑
+* hidden 属性          ~隐藏
+* spellcheck 属性      ~检测拼写是否正确
+* tabindex 属性        ~切换顺序
 
