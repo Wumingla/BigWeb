@@ -59,6 +59,51 @@ email、 url、 number、 range、 DatePickers
 * 只有部分浏览器支持的元素
 * 其他被废除的元素
 
+## 表单新增属性
+Form、Formaction、Formmethod、Formenctype、Formtarget、Autofocus、Required、Labels
+#### form
+* 在HTML4中，表单内的从属元素必须书写再表单内部。
+* 在HTML5中，可以把他们书写再页面任何地方，然后为该元素指定一个form属性，属性值为该表单的id，这样就可以声明改元素从属于指定表单了。
+
+#### formaction
+* 在HTML4中，一个表单内的所有元素智能通过表单的action属性被统一提交到另一个页面。
+* 在HTML5中可以为所有的提交按钮，增加不同的formaction属性，使单击不同的按钮可以将表单提交到不同的页面。
+
+#### formmethod属性
+* 在HTML4中，一个表单内只能有一个action属性用来对表单内所有元素统一指定提交页面，所以每个表单内页只有一个method属性来统一指定提交方法。
+* 在HTML5中，可以使用formmethod属性来对每一个表单元素分别指定不同的提交方法。
+
+#### formenctype
+* 在HTML4中，表单元素具有一个enctype属性，该属性用于指定在表单发送到服务器之前应该如何对表单内的数据进行编码。
+* 在HTML5中，可以使用formenctype属性对表单元素分别指定不同的编码方式。
+
+#### formtarget
+* 在HTML4中，表单元素具有一个target属性，改属性用于指定在何处打开表单提交后所需要加载的页面。
+* 在HTML5中，可以对多个提交按钮分别使用formtarget属性来指定提交后在何处打开所需要加载的页面。
+
+#### autofocrs
+* 为文本框、选择框或按钮控件加上autofocus属性，当画面打开时，改控件自动获得光标焦点。
+
+#### required
+* HTML5中新增的required属性可以应用在大多数输入元素上，在提交时，如果元素中内容为空，则不允许提交，同时在浏览器中显示信息提示文字。
+
+#### labels
+在HTML5中，为所有可使用标签的表单元素、button、select元素等，定义一个labels属性，属性值为一个NodeList对象，代表改元素所绑定的标签元素所构成的集合。
+
+#### control
+在HTML5中，可以在标签内部放置一个表单元素，并通过该标签的control属性来访问该表单元素。
+
+#### placeholder
+placeholder是指当文本框处于未输入状态时显示的输入提示。当文本框处于未输入状态切未获取光标焦点时，模糊显示输入提示文字。
+
+#### list
+在HTML5中，为单行文本框增加了一个list属性，该属性的值为某个datalist元素的id。datalist元素也是HTML5中新增的元素，该元素类似于选择框，但是当用户想要设定的值不在选择列表之内，允许自行输入。datalist元素本身并不显示，而是当文本框获取焦点时以提示输入的显示方式。
+
+
+
+
+####
+
 ## 全局属性
 * contentEditable 属性 
 * designMode 属性  
