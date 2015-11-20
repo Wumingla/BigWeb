@@ -99,6 +99,55 @@
 </table>
 <button onclick="deleteRow()">删除第一行</button>
 ```
-  
-  
-    
+## cloneRange
+cloneRange用于当前的range对象进行复制，该方法返回当前range的对象。意味着可以做一个复制的功能。
+```
+<script>
+    function cloneRange(){
+        var rangeObj = document.createRange();
+        rangeObj.selectNoteContents(document.getElementById("p"));
+        var rangeClone = rangeObj.cloneRange();
+        alert(rangeClone.toString());
+    }
+</script>
+<p id="p">这里是随便书写的内容</p>
+<button onclick="cloneRange()">克隆</button>
+```
+## cloneContents
+用于在页面上增加一段HTML代码，并且将range对象所代表的区域中的HTML代码克隆追加到HTML代码之后。我们再页面有一段内容，我们点击那么我么就克隆岛这么一段内容在当前容器承载。
+```
+<script>
+    function cloneContent(){
+        var div = document.getElementById("div");
+        var rangeObj = document.createRange();
+        rangeObj.selectNodeContents(div);
+        var docFrangMent = rangeObj.cloneContents();
+        div.appendChild(docFrangeMent);
+    }
+</script>
+<div id="div">
+    你好吗？
+    <br/>
+    <button onclick="cloneContent()">克隆</button>
+    <br/>
+</div>
+```
+## extractContents
+range对象所代表区域的HTML代码克隆到docFramgent对象里中。
+```
+<script>
+    function moveContent(){
+        var srcDiv = document.getElementById("srcDiv");
+        var distDiv = document.getElementById("distDiv");
+        var rangeObj = document.createRange();
+        rangeObj.selectNodeContents(srcDiv)
+        var docFragment = rangeObj.extractContents();
+        disDiv.appendChild(docFragment);
+        
+    }
+</script>
+<div id="srcDiv" style="background-color:red; width:300px;height:50px">你好吗</div>
+<div id="distDiv" style="background-color:orange; width:300px;height:50px"></div>
+<button onclick="moveContent()">移动元素</button>
+```
+
