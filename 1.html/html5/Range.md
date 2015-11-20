@@ -150,4 +150,73 @@ range对象所代表区域的HTML代码克隆到docFramgent对象里中。
 <div id="distDiv" style="background-color:orange; width:300px;height:50px"></div>
 <button onclick="moveContent()">移动元素</button>
 ```
-
+## insertNode
+用于指定节点插入到某个range对象所代表的区域中，插入位置为某range对象的起点位置。通过点击事件移动当前你想移动的内容。
+```
+<srcitp>
+    function moveButton(){
+        var btn = document.getElementById("button");
+        var selection = document.getSelection();
+        if(selection.rangeCount >0){
+            var range = selection.getRangeAt(0);
+            range.inserNode(btn);
+        }
+    }
+</script>
+<div onmouseup="moveButton()" style="width:400px; background-color:orange">
+    这里是一段文字这里是一段文字这里是一段文字这里是一段文字这里是一段文字这里是一段文字这里是一段文字
+</div>
+<button id="button">按钮</button>
+```
+## compareBoundaryPonits
+用于比较2个range对象的起点位置或终点位置。
+```
+<script>
+    function testPlace(){
+        var boldText = document.getElementByID("boldTest");
+        var boldRange = document.createRange();
+        boldRange.selectNodeContents(boldTest.firstChild);
+        var selection = document.getSelection();
+        if(selection.rangeCount>0){
+            var selRange = selection.getRangeAt(0);
+            if(selRange.compareBoundaryPoints(Range.START_TO_END，boldRange)<=0){
+                alert("选取的文字在粗体前面");
+            }else{
+                if(selRange.compareBoundaryPoints(Range.END_TO_START，boldRange)>=0){
+                alert("选取的文字在粗体后面");
+                }
+            }
+        }
+    }
+</script>
+这是一段文字，我也不<b id="boldTest">知道</b>些什么。随便吧。
+<br/>
+<button onclick="testPlace()">位置比较</button>
+```
+## collapse
+range对象所代表的区域终点移动到该区域的起点处。或将range对象所代表区域的起点处移动到终点处。
+```
+<script>
+    var rangeObj = document.createRange();
+    function selectRangeConents(){
+        var div = document.getElementById("div");
+        rangeObj.selectNode(div);
+    }
+    function selectRangeConents(){
+        rangeObj.collapse(false);
+    }
+    function selectRangeConents(){
+        alert(rangeObj.toString());
+    }
+</script>
+<div id="div" style="background-color:bisque; width:30px; height:50px;">元素中的内容</div>
+<button onclick="selectRangeConents()">选择元素</button>
+<button onclick="selectRangeConents()">取消元素</button>
+<button onclick="selectRangeConents()">显示range内容</button>
+```
+## detach
+释放掉所选取的range对象
+```
+var rangeObj = document.createRange();
+rangeObj.detach();
+```
