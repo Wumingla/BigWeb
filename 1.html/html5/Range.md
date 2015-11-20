@@ -65,6 +65,11 @@
 <button onclick="deleteChar()">删除文字</button>
 ```
 ## setStartBefort、setEndAfter
+* setStartBefore()	把该范围的开始点设置为紧邻指定节点之前。
+* setEndAfter()	    把该范围的结束点设置为紧邻指定节点的节点之后。
+* 
+* setStartAfter()	把该范围的开始点设置为紧邻指定节点的节点之后。
+* setEndBefore()	把该范围的结束点设置为紧邻指定节点之前。
 ```
 <script>
     function deleteRow(){
