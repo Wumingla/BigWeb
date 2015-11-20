@@ -70,6 +70,8 @@ control属性供添加播放、暂停和音量控件
 * 自定义控件
 ```
 <button onclick="clickV()">播放/暂停</button>
+<button onclick="clickB()">放大</button>
+<button onclick="clickS()">缩小</button>
 <video id="video">
   <source src="raw/xxx.mp4">
   <source src="raw/xxx.ogg">
@@ -84,6 +86,13 @@ control属性供添加播放、暂停和音量控件
       v.pause();
     }
   }
-
+  function clickB(){
+    v.width = 800;
+    v.height = 800;
+  }
+  function clickS()}
+    v.width = 300;
+    v. height = 300;
+  }
 ```
 
