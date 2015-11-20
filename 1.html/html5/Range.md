@@ -48,6 +48,22 @@
 ## setStart、setEnd
 * setStart用于某个节点中的某个位置指定为range对象所代表区域的起点位置
 * setStart用于某个节点中的某个位置指定为range对象所代表区域的终点位置
+```
+<srcipt>
+    function deleteChar(){
+        var div = document.getElementById("myDiv");
+        var textNode = div.firstChild;
+        var rangeObj = document.createRange();
+        rangeObj.setStart(textNode,1);
+        rangeObj.setStart(textNode,4);
+        rangeObj.deleteContents();
+    }
+</script>
+<div id="myDiv" style="color:red">
+    这段文字是用来删除的
+</div>
+<button onclick="deleteChar()">删除文字</button>
+```
 
     
   
