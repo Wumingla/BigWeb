@@ -64,9 +64,36 @@
 </div>
 <button onclick="deleteChar()">删除文字</button>
 ```
-
-    
-  
+## setStartBefort、setEndAfter
+```
+<script>
+    function deleteRow(){
+        var table = document.getElementById("myTable");
+        if(table.rows.length >0){
+            var row = table.rows[0];
+            var rangeObj = document.createRange();
+            rangeObj.setStartBefore(row);
+            rangeObj.setEndAfter(row);
+            rangeObj.deleteContents();
+        }
+    }
+</script>
+<table id="myTable" border="1" cellspacing="0" cellpadding="0">
+    <tr>
+        <td>内容1</td>
+        <td>内容2</td>
+    </tr>
+        <tr>
+        <td>内容3</td>
+        <td>内容4</td>
+    </tr>
+        <tr>
+        <td>内容5</td>
+        <td>内容6</td>
+    </tr>
+</table>
+<button onclick="deleteRow()">删除第一行</button>
+```
   
   
     
