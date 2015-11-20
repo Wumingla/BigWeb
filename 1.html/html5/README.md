@@ -179,3 +179,101 @@ placeholder是指当文本框处于未输入状态时显示的输入提示。当
 * spellcheck 属性      ~检测拼写是否正确
 * tabindex 属性        ~切换顺序
 
+## 增强的页面元素
+#### figure 与 figcaption
+一种组合元素，带有可选标题。用来表示网页上一块独立的内容，将其移除不会对其他内容产生影响。figure所表现得内容可以使图片、统计图、或者代码事例。figcaption元素表示figure元素的标题，从属于figure元素的内部。一个figure元素最多只允许放置一个figcaption元素，但是允许放置多个其他元素。
+```
+<figure>
+    <figcation>标题/整体的描述</figcation>
+    <img src="xxx.png">
+    <img src"aaa.png">
+</figure>
+```
+#### details 与 summary
+details元素是用来标识改元素内部的子元素可以被展开收缩形式的元素。内部不仅限制于放置文字，还可以放置表单、插件或者是统计图的详细数据。summary元素从属于details元素，当用鼠标单击summary元素的文字内容时，details所有的从属元素会被展开，或者收缩。如果没有填写summary元素，浏览器会默认提供文字。
+```
+<script>
+    function detail_onclick(detail){
+      var p = document.getElementById("p");
+      if(detail.open){
+        p.style.visibility="hidden";
+      }else{
+        p.style.visibility="visible";
+      }
+    }
+  </script>
+      
+<details id="detail" onclick="detail_onclick(this)">
+  <summary>更多详情</summary>
+  <p id="p" style="visiblility:hidden">我是详情</p>
+</details>
+```
+#### mark
+表示页面中需要突出显示或者高亮显示，对于当前具有参考作用的文字。有一个着重或者说是高亮的效果。背景有颜色。
+```
+<p>这是一段文字用来测试<mark>mark元素</mark></p>
+```
+
+#### progress
+progress元素代表任务的完成进度，这个进度可以使不确定的，表示进度正在执行，或者不清楚当前工作量有没有完成。也可以使用数值来表示完成进度的一个情况。
+```
+<script>
+    function btn(){
+      var i = 0;
+      function thread_one(){
+      if(i<=100){
+        i ++;
+        updateprogress(i);
+      }
+      setInterval(thread_one,100);
+    }
+    function updateprogress(newValue){
+        var progressBar = document.getElementById("p");
+        progressBar.value = newValue;
+        progressBar.getElementsByTagName("span")[0].textContent = newValue;
+    }
+<section>
+    <h2>pregress元素的使用</h2>
+    <p>完成的百分比<progress id="p" background-color="red"  max="100"><span>0</span>%</progress></p>
+    <input type="button" onclick="" value="点击">
+</section>
+```
+#### meter
+meter元素表示规定范围内的数值量。
+````
+<meter value="40" min="0" max="100" low="10" high="90" optimum="80"></meter>
+````
+#### ol
+在HTML5中为ol添加了start 和 reversed 属性。start 表示从哪里开始，reversed 表示倒叙。
+```
+<ol start="5" reversed>
+    <li>列表1</li>
+    <li>列表2</li>
+    <li>列表3</li>
+    <li>列表4</li>
+    <li>列表5</li>
+</ol>
+```
+#### dl
+在HTML5中对dl进行重新定义，表示多个名字的列表项，每项下面都带有一条或多条的dt元素用来表示术语。dt元素后面紧跟着一个或多个dd元素。在一个元素内不能允许有相同名字的dt元素重复术语。
+```
+<dl>
+    <dt>hello</dt>
+    <dd>你好就是hello</dd>
+    <dt>博客</dt>
+    <dd>你喜欢博客</dd>
+</dl>
+```
+#### cite
+cite元素表示一篇文文章、一首歌的一个标题，该作品可以在页面中被详细应用。有斜体效果。
+```
+<h3>cite元素</h3>
+<p>我最喜欢的电影是<cite>速度与激情</cite></p>
+```
+#### small
+在HTML5中对small元素进行了重新的定义，由通用的改为专门用来标识小字印刷体的元素。不允许应用在页面的主体内容中，只允许被当做额外信息以依赖方式内嵌在页面中使用。并不意味着结构字号会改变，如果要改变字号还是要css样式配合来实现。
+
+
+
+
+
