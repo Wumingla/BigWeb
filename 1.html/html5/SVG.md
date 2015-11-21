@@ -19,3 +19,7 @@
   <circle cx="60" cy="60" r="50" ></circle>
 </svg>
 ```
+### 引入外部的SVG文件
+```
+<iframe src="xxx.svg" width="100px" height="100px" frameborder="no"></iframe>
+```
