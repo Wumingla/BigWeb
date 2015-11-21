@@ -13,7 +13,7 @@
 * SVG可在图片部改变质量的情况下放大或缩小
 
 ### SVG绘制矢量图形
-[帮助文档](developer.mozilla.org/zh-CN/)
+<a href="developer.mozilla.org/zh-CN/">帮助文档</a>
 ```
 <svg  width="120px" height="120px" viewBox="0 0 120 120" version="1.1" >
   <circle cx="60" cy="60" r="50" ></circle>
