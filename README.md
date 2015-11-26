@@ -35,7 +35,7 @@ HTML5、CSS3、JavaScript、php、Nodejs、算法、Linux、SQL、NoSQL、粒子
         - [PhotoShop](http://www.photoshop.com/products/photoshop)/[Paint.net](http://www.getpaint.net/)/[Fireworks](http://www.adobe.com/cn/products/fireworks.html)/[GIMP](http://www.gimp.org/)/[Sketch](http://bohemiancoding.com/sketch/)
     - 开发工具
         - 编辑器和IDE
-            - [VIM](http://www.vim.org/)/[Sublime Text2](http://www.sublimetext.com/)
+            - [VIM](http://www.vim.org/)/[Sublime Text3](http://www.sublimetext.com/)
             - [Notepad++](http://notepad-plus-plus.org/)/[EditPlus](http://www.editplus.com/)
             - [WebStorm](http://www.jetbrains.com/webstorm/)
             - [Emacs](http://www.gnu.org/software/emacs/)  [EmacsWiki](http://emacswiki.org)
